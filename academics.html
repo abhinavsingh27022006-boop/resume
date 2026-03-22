@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Singh | Academics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-btn" onclick="toggleTheme()">🌓 Theme</button>
+    </nav>
+    <div class="container">
+        <section class="card">
+            <h2>Academic Background</h2>
+            <br>
+            
+            <details>
+                <summary>
+                    <div class="summary-header">
+                        <img src="nitw-logo.png" alt="NITW Logo" class="inst-logo">
+                        <span>B.Sc.-B.Ed. (Mathematics with Computer Science) | NIT Warangal</span>
+                    </div>
+                </summary>
+                <div class="details-content">
+                    <p>An Integrated Teacher Education Program designed to cultivate leaders in education with deep expertise in Mathematics and a minor specialization in Computer Science. This rigorous curriculum bridges pure mathematical theory with an algorithmic problem-solving approach at one of India's most premier technical institutes. <em>(Expected to complete in 2029)</em></p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-header">
+                        <img src="iimb-logo.png" alt="IIM Bangalore Logo" class="inst-logo">
+                        <span>BBA in Digital Business and Entrepreneurship | IIM Bangalore</span>
+                    </div>
+                </summary>
+                <div class="details-content">
+                    <p>A forward-looking undergraduate program from a top-tier management institute, focusing directly on the intersection of modern technology and business strategy. It builds a robust foundation in financial modeling, digital marketing, and startup frameworks, perfectly equipping me to launch and scale innovative educational platforms.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-header">
+                        <img src="kv-logo.png" alt="Kendriya Vidyalaya Logo" class="inst-logo">
+                        <span>Intermediate & Matriculation | Kendriya Vidyalaya AFS, Lucknow</span>
+                    </div>
+                </summary>
+                <div class="details-content">
+                    <p>Built a strong academic foundation with a focus on discipline and scientific curiosity at Kendriya Vidyalaya AFS, Bakshi Ka Talab.</p>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li><strong>Intermediate:</strong> Secured 86.8%</li>
+                        <li><strong>Matriculation:</strong> Secured 89.4%</li>
+                    </ul>
+                </div>
+            </details>
+
+        </section>
+    </div>
+    <footer>&copy; 2026 Abhinav Singh</footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.setAttribute('data-theme', body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            localStorage.setItem('theme', body.getAttribute('data-theme'));
+        }
+        if (localStorage.getItem('theme') === 'dark') document.body.setAttribute('data-theme', 'dark');
+    </script>
+</body>
+</html>

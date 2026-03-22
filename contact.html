@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Singh | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-btn" onclick="toggleTheme()">🌓 Theme</button>
+    </nav>
+    <div class="container">
+        <section class="card">
+            <h2 style="text-align: center; display: block; border: none; font-size: 2.2rem; margin-bottom: 10px;">Let's Connect</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 20px;">Reach Out</h3>
+                    <p>Whether you want to discuss a startup idea, talk tech, or invite me to an open mic, I am always open to connecting.</p>
+                    <br>
+                    <p>📧 <strong>Email:</strong> abhinav.singhdbe25@iimb.ac.in</p>
+                    <p>📍 <strong>Location:</strong> NIT Warangal</p>
+                    <p>🔗 <strong>LinkedIn:</strong> <a href="#" style="color: var(--accent); text-decoration: none;">www.linkedin.com/in/abhinav-singh-0a8936211</a></p>
+                </div>
+
+                <div class="contact-form">
+                    <form action="https://formsubmit.co/abhinavsingh27022006@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New message from your Portfolio Site!">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message 🚀</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>&copy; 2026 Abhinav Singh</footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.setAttribute('data-theme', body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            localStorage.setItem('theme', body.getAttribute('data-theme'));
+        }
+        if (localStorage.getItem('theme') === 'dark') document.body.setAttribute('data-theme', 'dark');
+    </script>
+</body>
+</html>

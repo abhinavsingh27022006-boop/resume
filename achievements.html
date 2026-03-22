@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Singh | Achievements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-btn" onclick="toggleTheme()">🌓 Theme</button>
+    </nav>
+    <div class="container">
+        <section class="card">
+            <h2>Notable Achievements</h2>
+            <br>
+            <details>
+                <summary>NDA-1 2024</summary>
+                <div class="details-content"><p>Secured All India Rank (AIR) 620 in the highly competitive National Defence Academy examination.</p></div>
+            </details>
+            <details>
+                <summary>National Chess Sports Meet</summary>
+                <div class="details-content"><p>Secured the Silver Medal at the state level in the U-19 category, showcasing strategic foresight and competitive spirit.</p></div>
+            </details>
+            <details>
+                <summary>Pariksha Pe Charcha 2023</summary>
+                <div class="details-content"><p>Served as a core member of the Event Conduction Team. Additionally, my book review was officially retweeted by @MyGovIn and @NCERT.</p></div>
+            </details>
+            <details>
+                <summary>National Children Science Congress 2022</summary>
+                <div class="details-content"><p>Official participant, presenting scientific research and analytical problem-solving skills at a national forum.</p></div>
+            </details>
+        </section>
+
+        <section class="card">
+            <h2>Positions of Responsibility</h2>
+            <br>
+            <details>
+                <summary>Chief Marketing Lead @ NobleX</summary>
+                <div class="details-content"><p>Spearheading marketing strategies, social media outreach, and recruitment drives for a college startup focused on bridging the gap between alumni and students.</p></div>
+            </details>
+            <details>
+                <summary>School Captain</summary>
+                <div class="details-content"><p>Led the student council, managed school-wide events, and acted as the primary liaison between the student body and the administration at KV AFS.</p></div>
+            </details>
+            <details>
+                <summary>Class Representative</summary>
+                <div class="details-content"><p>Consistently represented student interests, managed classroom logistics, and facilitated communication between peers and faculty.</p></div>
+            </details>
+        </section>
+    </div>
+    <footer>&copy; 2026 Abhinav Singh</footer>
+    <script>
+        function toggleTheme() { const body = document.body; body.setAttribute('data-theme', body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); localStorage.setItem('theme', body.getAttribute('data-theme')); }
+        if (localStorage.getItem('theme') === 'dark') document.body.setAttribute('data-theme', 'dark');
+    </script>
+</body>
+</html>

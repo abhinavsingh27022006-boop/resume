@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Singh | Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-btn" onclick="toggleTheme()">🌓 Theme</button>
+    </nav>
+    <div class="container">
+        <section class="card">
+            <h2 style="margin-bottom: 30px;">Core Competencies</h2>
+            
+            <details>
+                <summary style="font-size: 1.2rem; text-align: center; padding: 20px;">Technical Skills</summary>
+                <div class="details-content">
+                    <ul style="list-style-position: inside; padding: 10px; line-height: 2;">
+                        <li><strong>C Programming:</strong> Writing, debugging, and optimizing algorithmic code.</li>
+                        <li><strong>Web Development:</strong> Building responsive websites using Semantic HTML and CSS Flexbox.</li>
+                        <li><strong>Business Analytics:</strong> Evaluating financial statements and digital business models.</li>
+                        <li><strong>Advanced Mathematics:</strong> Solving complex problems in Differential Equations and Solid Geometry.</li>
+                        <li><strong>Startup Strategy:</strong> Developing pitch decks, branding assets, and go-to-market strategies.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary style="font-size: 1.2rem; text-align: center; padding: 20px;">Soft Skills</summary>
+                <div class="details-content">
+                    <ul style="list-style-position: inside; padding: 10px; line-height: 2;">
+                        <li><strong>Public Speaking:</strong> Captivating audiences through stand-up comedy and formal presentations.</li>
+                        <li><strong>Leadership:</strong> Guiding teams as Chief Marketing Lead, School Captain, and Class Representative.</li>
+                        <li><strong>Event Management:</strong> Organizing and hosting large-scale events like campus open mics.</li>
+                        <li><strong>Effective Communication:</strong> Bridging the gap between highly technical concepts and general audiences.</li>
+                        <li><strong>Strategic Thinking:</strong> Applying competitive foresight learned from state-level chess to real-world problem-solving.</li>
+                    </ul>
+                </div>
+            </details>
+
+        </section>
+    </div>
+    <footer>&copy; 2026 Abhinav Singh</footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.setAttribute('data-theme', body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            localStorage.setItem('theme', body.getAttribute('data-theme'));
+        }
+        if (localStorage.getItem('theme') === 'dark') document.body.setAttribute('data-theme', 'dark');
+    </script>
+</body>
+</html>

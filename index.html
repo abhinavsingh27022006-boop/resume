@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Singh | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-btn" onclick="toggleTheme()">🌓 Theme</button>
+    </nav>
+    <div class="container">
+        <section class="card hero" style="margin-bottom: 30px;">
+            <img src="profile.jpg" alt="Abhinav Singh" class="hero-img">
+            <div class="hero-text">
+                <h1>Abhinav Singh</h1>
+                <p>An Orator, Chess Player, and All time Learner</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <details>
+                <summary>About Me</summary>
+                <div class="details-content">
+                    <p>I am a dynamic student currently navigating the intersection of deep technical mathematics at NIT Warangal and modern digital business at IIM Bangalore. I balance my analytical approach to problem-solving with a passion for effective communication, team leadership, and creative expression.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>My Ambition</summary>
+                <div class="details-content">
+                    <p>My ambition is to build an educational startup that decouples the fear of assessment from the learning process. I am driven by a vision to cultivate natural curiosity and foster genuine, interest-driven learning in mathematics and science.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>My Skill Set</summary>
+                <div class="details-content">
+                    <ul>
+                        <li><strong>Technical:</strong> Python Programming, C Programming, Web Development (HTML/CSS).</li>
+                        <li><strong>Soft Skills:</strong> Public Speaking, Event Management, Cross-team Collaboration, Quick Grasping Ability, Teaching, Mentoring.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>My Areas of Interest</summary>
+                <div class="details-content">
+                    <p>Outside of academics, I thrive on stage performing stand-up comedy and organizing open mic events. I am also highly strategic, enjoying competitive chess, and I have a deep passion towards <em>Teaching</em> and <em>Learning</em> in general.</p>
+                </div>
+            </details>
+        </section>
+    </div>
+    <footer>&copy; 2026 Abhinav Singh</footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.setAttribute('data-theme', body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            localStorage.setItem('theme', body.getAttribute('data-theme'));
+        }
+        if (localStorage.getItem('theme') === 'dark') document.body.setAttribute('data-theme', 'dark');
+    </script>
+</body>
+</html>
